@@ -14,7 +14,7 @@ import os
 wav_iteration = 0       #num of recordings
 sec_wav = 10            # duration the of each audio recoring in seconds 
 fs = 44100              # samplerate 
-max_recordings = 3
+max_recordings = 3          
 FORMAT = pyaudio.paInt16
 CHUNK = 1024
 path = os.getcwd()
@@ -51,7 +51,7 @@ def record(wav_iteration):
 
         
 
-#converts wav to text
+#converts wav to text and outputs to csv
 def tts(wav_iteration):
     r = sr.Recognizer()
     with sr.AudioFile(str(path) + "/wav/" + str(wav_iteration) + ".wav") as source: 
