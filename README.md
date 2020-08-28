@@ -5,7 +5,7 @@ hopefully when it is done, it will make the processs of makeing a datasets easie
 
 
 # Basic Idea
-records audio in .wav format 
+records audio in .wav format <br>
 converts to text using speech recognition
 outputs to csv
 all within a GUI
