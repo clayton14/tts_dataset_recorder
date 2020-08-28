@@ -1,7 +1,7 @@
 
 <h1 align="center">
 # tts_dataset_recorder
-<h1>
+</h1>
 this is a work in progress python project used to make datasets for voice cloning.
 hopefully when it is done, it will make the processs of makeing a datasets easier
 
