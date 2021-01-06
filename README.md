@@ -26,7 +26,7 @@ installation and setup
 <h3>
 run 
 </h3>
-> python -m pip install -r requirements.txt
 
+> python -m pip install -r requirements.txt
 
 if you gen an error with py audio you might have to install the .whl manually  
