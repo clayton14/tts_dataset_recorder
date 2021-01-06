@@ -9,6 +9,7 @@ hopefully when it is done, it will make the processs of makeing a datasets easie
 <h2 align="center">
 Basic Idea
 </h2>  
+
 records audio in .wav format <br>
 converts to text using speech recognition <br>
 outputs to csv<br>
@@ -17,3 +18,14 @@ all within a GUI <br>
 <br>
 p.s.  still learning pyhton ;)
 
+
+<h2 align = "center" >
+installation and setup
+</h2>
+
+run 
+
+> python -m pip install -r requirements.txt
+
+
+if you gen an error with py audio you might have to install the whl manuly 

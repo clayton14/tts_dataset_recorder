@@ -1,0 +1,8 @@
+SpeechRecognition==3.8.1
+sounddevice==0.4.1
+pipwin
+numpy
+PyAudio==0.2.11
+
+
+
