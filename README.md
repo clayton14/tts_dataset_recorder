@@ -29,4 +29,7 @@ run
 
 > python -m pip install -r requirements.txt
 
-if you gen an error with py audio you might have to install the .whl manually  
+if you gen an error with py audio you might have to install the .whl manually.  
+To start the program run 
+
+>python record.py 
