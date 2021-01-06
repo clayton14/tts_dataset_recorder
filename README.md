@@ -23,9 +23,10 @@ p.s.  still learning pyhton ;)
 installation and setup
 </h2>
 
+<h3>
 run 
-
+</h3>
 > python -m pip install -r requirements.txt
 
 
-if you gen an error with py audio you might have to install the whl manuly 
+if you gen an error with py audio you might have to install the .whl manually  
