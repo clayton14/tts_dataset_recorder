@@ -11,7 +11,7 @@ Basic Idea
 </h2>  
 
 records audio in .wav format <br>
-converts to text using speech recognition <br>
+converts audio text using speech recognition <br>
 outputs to csv<br>
 each recording is **10** seconds long and will begin after the countdown. Any any more than 10 seconds might break because it is using google's text to speech<br>
 <br>
