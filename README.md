@@ -30,6 +30,7 @@ run
 
 if you get an error with py audio you might have to install the .whl manually using. <br>
 >pip install PyAudio-0.2.11-cp38-cp38-win_amd64.whl
+
 The one in this repo is the one that worked for me, if you are having troubble go [here](https://stackoverflow.com/questions/52283840/i-cant-install-pyaudio-on-windows-how-to-solve-error-microsoft-visual-c-14) for reference.
 
 **To start the program run**
