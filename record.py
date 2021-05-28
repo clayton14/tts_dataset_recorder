@@ -8,16 +8,18 @@ import sounddevice as sd
 from scipy.io.wavfile import write
 import multiprocessing
 import time
-import os
+import os, sys
 
 #audip stuff
 wav_iteration = 0       #num of recordings
+rec_count = 0
 sec_wav = 10            # duration the of each audio recoring in seconds 
 fs = 44100              # samplerate 
 max_recordings = 3          
 FORMAT = pyaudio.paInt16
 CHUNK = 1024
 path = os.getcwd()
+
 
 #starts recording the audio in wav format
 def record(wav_iteration):
@@ -65,9 +67,25 @@ def tts(wav_iteration):
         writer.writerow({'itration':str(wav_iteration), 'wav':str(wav_iteration) + '.wav', 'text':str(audio_recognizer) + '\n'})
 
 
+    if (os.path.exists(path + "/wav") and not os.listdir(path + "/wav") == 0):
+        print("resume recording")
+        list = os.listdir("./wav")
+        wav_iteration = len(list)
+    else:
+        print("no files found in dir ressume recording")
+
 
 
 while True:
+    print("press ctl + C to stop recording")
+    time.sleep(1)
+    if (not os.listdir(path + "/wav") == 0):
+        list = os.listdir("./wav")
+        wav_iteration = len(list)
+    else:
+        print("no files found in dir\nressume recording")
+        break
+
     print("recording in")
 #countdown
     t = 3 
@@ -90,8 +108,7 @@ while True:
         print("an error has occurred, processing audio again")
         tts(wav_iteration)
    
-
     wav_iteration += 1
-    if wav_iteration == max_recordings:
-        break
+  
     
+    #if(len(os.listdir("./wav")) == 0):
