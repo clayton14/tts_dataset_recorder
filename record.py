@@ -12,7 +12,6 @@ import os, sys
 
 #audip stuff
 wav_iteration = 0       #num of recordings
-rec_count = 0
 sec_wav = 10            # duration the of each audio recoring in seconds 
 fs = 44100              # samplerate 
 max_recordings = 3          
@@ -20,6 +19,11 @@ FORMAT = pyaudio.paInt16
 CHUNK = 1024
 path = os.getcwd()
 
+# make dir for the audio stuff
+if not os.path.exists("/wav"):
+    os.makedirs("wav")
+else:
+    print("error could not make dir")
 
 #starts recording the audio in wav format
 def record(wav_iteration):
@@ -60,12 +64,12 @@ def tts(wav_iteration):
         audo_listener = r.listen(source)
         audio_recognizer = r.recognize_google(audo_listener, language='en-US')
         print(audio_recognizer)
+
         #csv stuff
     with open("dataset.csv", 'a',  newline='') as csvf:
         fieldnames = ['itration', 'wav', 'text']
         writer = csv.DictWriter(csvf, fieldnames=fieldnames)
         writer.writerow({'itration':str(wav_iteration), 'wav':str(wav_iteration) + '.wav', 'text':str(audio_recognizer) + '\n'})
-
 
     if (os.path.exists(path + "/wav") and not os.listdir(path + "/wav") == 0):
         print("resume recording")
@@ -75,10 +79,7 @@ def tts(wav_iteration):
         print("no files found in dir ressume recording")
 
 
-
 while True:
-    print("press ctl + C to stop recording")
-    time.sleep(1)
     if (not os.listdir(path + "/wav") == 0):
         list = os.listdir("./wav")
         wav_iteration = len(list)
@@ -111,4 +112,5 @@ while True:
     wav_iteration += 1
   
     
-    #if(len(os.listdir("./wav")) == 0):
+    
+
