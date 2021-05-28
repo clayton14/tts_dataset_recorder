@@ -29,7 +29,7 @@ run
 > python -m pip install -r requirements.txt
 
 if you get an error with py audio you might have to install the .whl manually. <br>
-The one in this repo is the one that worked for me if you are having troubble go [here](https://stackoverflow.com/questions/52283840/i-cant-install-pyaudio-on-windows-how-to-solve-error-microsoft-visual-c-14) for refrence.
+The one in this repo is the one that worked for me, if you are having troubble go [here](https://stackoverflow.com/questions/52283840/i-cant-install-pyaudio-on-windows-how-to-solve-error-microsoft-visual-c-14) for refrence.
 
 **To start the program run**
 >python record.py 
