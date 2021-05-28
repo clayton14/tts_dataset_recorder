@@ -26,7 +26,10 @@ installation and setup
 run 
 </h3>
 
-> python -m pip install -r requirements.txt
+create a python virtual environment by running the following command in the working directory
+>python -m venv .
+<br>
+>python -m pip install -r requirements.txt
 
 if you get an error with py audio you might have to install the .whl manually using. <br>
 >pip install PyAudio-0.2.11-cp38-cp38-win_amd64.whl
