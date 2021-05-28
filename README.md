@@ -22,7 +22,7 @@ each recording is **10** seconds long and will begin after the countdown. Any an
 installation and setup
 </h2>
 
-<h3>
+<h3 tag = "ok">
 installer
 <h3>
 you can use the executable file to run and install the recorder<br>
