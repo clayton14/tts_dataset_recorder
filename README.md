@@ -29,7 +29,7 @@ run with python
 </h3>
 
 create a python virtual environment by running the following command in the working directory
->python -m venv .
+>python -m venv . <br>
 >python -m pip install -r requirements.txt
 
 if you get an error with py audio you might have to install the .whl manually using. <br>
