@@ -30,6 +30,7 @@ run with python
 
 create a python virtual environment by running the following command in the working directory
 >python -m venv . <br>
+>Scripts\activate <br>
 >pip install -r requirements.txt
 
 if you get an error with py audio you might have to install the .whl manually using. <br>
