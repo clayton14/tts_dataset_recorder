@@ -24,7 +24,7 @@ installation and setup
 
 <h3>installer<h3>
 you can use the executable file to run and install the recorder<br>
-The installer can be found --> [here](https://github.com/clayton14/tts_dataset_recorder/releases) 
+The installer can be found [--> here <--](https://github.com/clayton14/tts_dataset_recorder/releases) 
 <h3>
 run with python
 </h3>
