@@ -27,9 +27,9 @@ installation and setup
 you can use the executable file to run and install the recorder<br>
 The installer can be found [--> here <--](https://github.com/clayton14/tts_dataset_recorder/releases) <br>
   
-<h2>
+<h3>
 run with python
-</h2>
+</h3>
 
 create a python virtual environment by running the following command in the working directory
 >python -m venv .
