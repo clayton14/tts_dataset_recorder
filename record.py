@@ -25,8 +25,10 @@ path = os.getcwd()
 if not os.path.exists('wav'):
     os.makedirs('wav')
 
-max_recordings = int(input("how many recordings do you want to make\n"))
-
+try:
+    max_recordings = int(input("how many recordings do you want to make\n"))
+except Exception as e:
+    print("Sorry, you can only enter whole numbers\n")
 
 #starts recording the audio in wav format
 def record(wav_iteration):
