@@ -3,7 +3,7 @@
 tts_dataset_recorder
 </h1>
 this is a work in progress python project used to make datasets for voice cloning. <br><br>
-hopefully when it is done, it will make the processs of makeing a datasets easier. **not offline**
+hopefully when it is done, it will make the processs of makeing a datasets easier. *not offline*
 
 
 <h2 align="center">
