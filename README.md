@@ -22,8 +22,8 @@ each recording is **10** seconds long and will begin after the countdown. Any an
 installation and setup
 </h3>
 
-you can use the executable file to run and install the recorder, the installer can be found [--> here <--](https://github.com/clayton14/tts_dataset_recorder/releases) <br>
-  
+~~you can use the executable file to run and install the recorder, the installer can be found [--> here <--](https://github.com/clayton14/tts_dataset_recorder/releases) <br>~~
+had some errors with the executable working on fixing them.
 <h3>
 run with python
 </h3>
